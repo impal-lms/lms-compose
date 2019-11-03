@@ -3,7 +3,7 @@ services:
     backend:
         build: ./backend
         environment:
-            - DB_URL=postgresql://root@database:26257/userdb?sslmode=disable
+            - DB_URL=postgresql://root@database:26257/postgres?sslmode=disable
             - PORT=:3000
         volumes:
             - ./static/:/server/static/
