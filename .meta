@@ -1,3 +1,6 @@
 {
-  "projects": {}
+  "projects": {
+    "frontend": "https://github.com/impal-lms/lms-frontend.git",
+    "backend": "https://github.com/impal-lms/lms-backend.git"
+  }
 }
