@@ -1,0 +1,74 @@
+Attaching to lms-compose_database_1, lms-compose_backend_1, lms-compose_frontend_1, lms-compose_nginx_1
+[33mbackend_1   |[0m {"level":"info","msg":"Logger enabled!!","time":"2019-12-02T01:37:36Z"}
+[36mdatabase_1  |[0m *
+[36mdatabase_1  |[0m * WARNING: RUNNING IN INSECURE MODE!
+[36mdatabase_1  |[0m * 
+[36mdatabase_1  |[0m * - Your cluster is open for any client that can access <all your IP addresses>.
+[36mdatabase_1  |[0m * - Any user, even root, can log in without providing a password.
+[36mdatabase_1  |[0m * - Any user, connecting as root, can read or write any data in your cluster.
+[36mdatabase_1  |[0m * - There is no network encryption nor authentication, and thus no confidentiality.
+[36mdatabase_1  |[0m * 
+[36mdatabase_1  |[0m * Check out how to secure your cluster: https://www.cockroachlabs.com/docs/v19.2/secure-a-cluster.html
+[36mdatabase_1  |[0m *
+[32mfrontend_1  |[0m 
+[32mfrontend_1  |[0m > lms-frontend@1.0.0 prestart /client
+[32mfrontend_1  |[0m > npm run build
+[32mfrontend_1  |[0m 
+[33mbackend_1   |[0m 
+[33mbackend_1   |[0m    ____    __
+[33mbackend_1   |[0m   / __/___/ /  ___
+[33mbackend_1   |[0m  / _// __/ _ \/ _ \
+[33mbackend_1   |[0m /___/\__/_//_/\___/ v4.1.11
+[33mbackend_1   |[0m High performance, minimalist Go web framework
+[33mbackend_1   |[0m https://echo.labstack.com
+[33mbackend_1   |[0m ____________________________________O/_______
+[33mbackend_1   |[0m                                     O\
+[36mdatabase_1  |[0m *
+[36mdatabase_1  |[0m * WARNING: running 'cockroach start' without --join is deprecated.
+[36mdatabase_1  |[0m * Consider using 'cockroach start-single-node' or 'cockroach init' instead.
+[36mdatabase_1  |[0m *
+[33mbackend_1   |[0m ⇨ http server started on [::]:3000
+[36mdatabase_1  |[0m *
+[36mdatabase_1  |[0m * WARNING: neither --listen-addr nor --advertise-addr was specified.
+[36mdatabase_1  |[0m * The server will advertise "e93e62b58d42" to other nodes, is this routable?
+[36mdatabase_1  |[0m * 
+[36mdatabase_1  |[0m * Consider using:
+[36mdatabase_1  |[0m * - for local-only servers:  --listen-addr=localhost
+[36mdatabase_1  |[0m * - for multi-node clusters: --advertise-addr=<host/IP addr>
+[36mdatabase_1  |[0m * 
+[36mdatabase_1  |[0m *
+[36mdatabase_1  |[0m CockroachDB node starting at 2019-12-02 01:37:36.22319434 +0000 UTC (took 0.7s)
+[36mdatabase_1  |[0m build:               CCL v19.2.1 @ 2019/11/18 23:23:55 (go1.12.12)
+[36mdatabase_1  |[0m webui:               http://e93e62b58d42:8080
+[36mdatabase_1  |[0m sql:                 postgresql://root@e93e62b58d42:26257?sslmode=disable
+[36mdatabase_1  |[0m RPC client flags:    /cockroach/cockroach <client cmd> --host=e93e62b58d42:26257 --insecure
+[36mdatabase_1  |[0m logs:                /cockroach/cockroach-data/logs
+[36mdatabase_1  |[0m temp dir:            /cockroach/cockroach-data/cockroach-temp379647612
+[36mdatabase_1  |[0m external I/O path:   /cockroach/cockroach-data/extern
+[36mdatabase_1  |[0m store[0]:            path=/cockroach/cockroach-data
+[36mdatabase_1  |[0m status:              restarted pre-existing node
+[36mdatabase_1  |[0m clusterID:           35226a07-4ae9-4495-b279-74ed1e409d93
+[36mdatabase_1  |[0m nodeID:              1
+[32mfrontend_1  |[0m 
+[32mfrontend_1  |[0m > lms-frontend@1.0.0 prebuild /client
+[32mfrontend_1  |[0m > tslint -c tslint.json -p tsconfig.json --fix
+[32mfrontend_1  |[0m 
+[32mfrontend_1  |[0m 
+[32mfrontend_1  |[0m > lms-frontend@1.0.0 build /client
+[32mfrontend_1  |[0m > tsc && mkdir -p dist/views && mkdir -p dist/assets && cp -a src/views/. dist/views/ && cp -a src/assets/. dist/assets
+[32mfrontend_1  |[0m 
+[32mfrontend_1  |[0m 
+[32mfrontend_1  |[0m > lms-frontend@1.0.0 start /client
+[32mfrontend_1  |[0m > node . | pino-pretty
+[32mfrontend_1  |[0m 
+[32mfrontend_1  |[0m Mon, 02 Dec 2019 01:37:47 GMT express-session deprecated undefined resave option; provide resave option at dist/app.js:36:50
+[32mfrontend_1  |[0m Mon, 02 Dec 2019 01:37:47 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at dist/app.js:36:50
+[32mfrontend_1  |[0m [1575250667945] INFO  (47 on c60198acfab0): hello world
+[32mfrontend_1  |[0m [1575250667946] INFO  (47 on c60198acfab0): /hello
+[32mfrontend_1  |[0m [1575250667946] INFO  (47 on c60198acfab0): /auth
+[32mfrontend_1  |[0m [1575250667947] INFO  (47 on c60198acfab0): /teacher
+[32mfrontend_1  |[0m [1575250667947] INFO  (47 on c60198acfab0): /admin
+[32mfrontend_1  |[0m [1575250667954] INFO  (47 on c60198acfab0): listening on port 4000
+[35mnginx_1     |[0m 172.19.0.1 - - [02/Dec/2019:01:37:51 +0000] "GET /api HTTP/1.1" 200 18 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[33mbackend_1   |[0m {"level":"info","msg":" 172.19.0.5 [2019-12-02T01:37:51Z] backend:3000 GET     / 200 0 18     112.828µs  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36","time":"2019-12-02T01:37:51Z"}
+Gracefully stopping... (press Ctrl+C again to force)

@@ -3,5 +3,6 @@
 compose:
 	@cd ./backend/ && make build
 	@docker-compose build
-	@docker-compose up
+	@touch runtime.log
+	@docker-compose up > runtime.log
 
