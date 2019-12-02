@@ -10,6 +10,7 @@ services:
             - DB_USER=root
             - DB_NAME=postgres
             - DB_PASSWORD=""
+            - DB_URL=postgresql://root@database:26257/postgres?sslmode=disable
         volumes:
             - ./static/:/server/static/
         depends_on:
